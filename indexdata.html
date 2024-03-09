@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details</title>
+    <link rel="stylesheet" href="parts.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #343a40;
+        }
+
+        p {
+            color: #6c757d;
+        }
+
+        .details-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .details-left {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .details-right {
+            flex: 1;
+        }
+
+        .item-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .item-name {
+            font-size: 24px;
+            color: #343a40;
+            margin-top: 10px;
+        }
+
+        .item-price {
+            font-size: 18px;
+            color: #007bff;
+            margin-top: 5px;
+        }
+
+        .item-description {
+            color: #6c757d;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .back-button,
+        .buy-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+        }
+
+        .back-button {
+            background-color: #6c757d;
+        }
+
+        .buy-button {
+            background-color: #0D6EFD;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Item Details</h1>
+        <div id="itemDetails" class="details-container"></div>
+
+        <div class="button-container">
+            <button class="back-button" onclick="goBack()">Back</button>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const carId = urlParams.get('carId');
+
+            const itemDetailsElement = document.getElementById('itemDetails');
+
+            fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    const selectedCar = data.cars.find(car => car.carId === carId);
+
+                    if (selectedCar) {
+                        itemDetailsElement.innerHTML = `
+                            <div class="details-left">
+                                <img src="./myotherimages/${selectedCar.img}" alt="${selectedCar.name}" class="item-image">
+                            </div>
+                            <div class="details-right">
+                                <h2 class="item-name">${selectedCar.name}</h2>
+                                <p class="item-price">${selectedCar.price}</p>
+                                <p class="item-description">${selectedCar.description}</p>
+                            </div>
+                        `;
+                    } else {
+                        itemDetailsElement.innerHTML = `<p>Car not found.</p>`;
+                    }
+                })
+                .catch(error => console.error('Error fetching JSON:', error));
+        });
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+{
+    "parts": [
+        {
+            "partId": "1",
+            "name": "High Performance Brakes",
+            "price": "$250",
+            "img": "brakes.jpg",
+            "description": "Introducing our High Performance Race Brakes – the epitome of stopping power for those who demand precision and reliability. Crafted with meticulous attention to detail, these brakes are engineered to redefine your driving experience and elevate your car's braking capabilities to unprecedented levels. Advanced materials and state-of-the-art construction ensure optimal performance under the most demanding conditions, offering unparalleled heat dissipation and minimizing brake fade. Whether you're pushing the limits on the track or navigating challenging terrains, our race brakes provide consistent stopping power, giving you the confidence to conquer every corner with ease. Upgrade to the future of braking technology and experience the thrill of unmatched performance with our High Performance Race Brakes – where precision meets power on every road."
+        },
+        {
+            "partId": "2",
+            "name": "Full Engine",
+            "price": "$22,000",
+            "img": "engine.jpg",
+            "description": "Introducing our Performance Crate Engine – the powerhouse that transforms your ride into a high-performance marvel. Unleash unrivaled horsepower and torque with this precision-engineered marvel, meticulously crafted for enthusiasts seeking an adrenaline-fueled driving experience. Built with cutting-edge technology and top-tier components, our crate engine delivers an unparalleled blend of power, efficiency, and durability. Whether you crave the thrill of the open road or dominating the track, this performance upgrade is the key to unlocking your vehicle's true potential. Elevate your driving dynamics and leave the competition in the dust with our Performance Crate Engine – the ultimate solution for those who demand uncompromising power and exhilaration."
+        },
+        {
+            "partId": "3",
+            "name": "High Performance Suspension",
+            "price": "$1,500",
+            "img": "suspension.jpg",
+            "description": "Introducing our High Performance Suspension system – the game-changer that redefines your driving dynamics and elevates your vehicle's handling to new heights. Engineered for enthusiasts who demand precision and responsiveness, this suspension upgrade combines cutting-edge technology with expert craftsmanship. Say goodbye to body roll and hello to razor-sharp cornering as our suspension system delivers enhanced control and stability. With adjustable components tailored for your driving style, you can fine-tune your ride to perfection, whether navigating challenging curves or conquering the track. Elevate your driving experience and enjoy the thrill of unparalleled road-hugging performance with our High Performance Suspension – where every twist and turn becomes an exhilarating adventure. Upgrade now and transform your driving dynamics into a symphony of precision and excitement."
+        },
+        {
+            "partId": "4",
+            "name": "Turbo",
+            "price": "$300",
+            "img": "turbo.jpg",
+            "description": "Unleash the beast within your engine with our High Performance Turbo, the ultimate boost for enthusiasts seeking extraordinary power and acceleration. Precision-engineered to deliver a surge of adrenaline, this turbocharger system seamlessly integrates cutting-edge technology with expert craftsmanship. Elevate your driving experience as you feel the rush of increased horsepower and torque, propelling your vehicle into a new realm of performance. With an emphasis on durability and efficiency, our High Performance Turbo is designed to withstand the demands of spirited driving, ensuring a thrilling ride every time you hit the gas. Upgrade now and experience the exhilaration of unparalleled turbocharged performance – because the open road is meant to be conquered."
+        }
+    ],
+    "cars": [
+        {
+            "carId": "1",
+            "name": "Black Porsche",
+            "price": "$102,000",
+            "img": "black_porsche.jpg",
+            "description": "Dive into the world of sophistication and performance with the Black Porsche. This sleek and powerful machine redefines the driving experience, seamlessly blending precision engineering with unmatched style. The stealthy black exterior conceals a heart that beats with dynamic power, delivering a driving sensation that is as refined as it is thrilling. From city streets to winding mountain roads, the Black Porsche is a symbol of automotive excellence, offering a symphony of performance, handling, and elegance that captivates both driver and onlookers alike."
+        },
+        {
+            "carId": "2",
+            "name": "Blue Camaro",
+            "price": "$65,000",
+            "img": "blue_chevy.jpg",
+            "description": "Embark on a journey of dynamic performance with the Blue Camaro – a true American muscle icon. The striking blue exterior hints at the power within, as this Camaro roars to life with a blend of raw muscle and modern technology. With its bold design and formidable presence, the Blue Camaro dominates the road, delivering an exhilarating driving experience that pays homage to its heritage while embracing the latest in automotive innovation. Ignite your passion for the open road and make a statement with the Blue Camaro – where power meets style in perfect harmony."
+        },
+        {
+            "carId": "3",
+            "name": "Ruby Mercedes",
+            "price": "$105,000",
+            "img": "ruby_mercedes.jpg",
+            "description": "Indulge in automotive opulence with the Ruby Mercedes, a beacon of luxury and sophistication. The rich ruby red exterior sets the stage for a driving experience that transcends the ordinary. Inside, the Mercedes envelops you in plush comfort and cutting-edge technology, creating a sanctuary on wheels. The powerful engine beneath the hood ensures a seamless fusion of performance and refinement, making every journey a celebration of elegance and power. Elevate your driving experience with the Ruby Mercedes – where uncompromising luxury meets the thrill of the open road in perfect harmony."
+        },
+        {
+            "carId": "4",
+            "name": "Orange Lambogini",
+            "price": "$120,000",
+            "img": "orange_lambo.jpg",
+            "description": "Unleash the untamed spirit of Italian luxury and performance with the Orange Lamborghini. A beacon of speed and style, this exotic masterpiece captivates with its vibrant orange hue and aerodynamic design. The Lamborghini's roaring engine is a symphony of power, delivering an adrenaline-pumping driving experience that pushes the boundaries of what's possible on the road. Embrace the thrill of the bull and make a bold statement on every journey with the Orange Lamborghini – where performance and style unite in an extraordinary dance of automotive excellence."
+        },
+        {
+            "carId": "5",
+            "name": "White Camaro",
+            "price": "$50,000",
+            "img": "white_chevy.jpg",
+            "description": "Experience the epitome of automotive purity with the White Camaro. This sleek and refined machine is a testament to the perfect fusion of power and elegance. The pristine white exterior reflects the precision engineering within, as the Camaro effortlessly balances performance with sophistication. Whether you're cruising through city streets or pushing the limits on the highway, the White Camaro is a symbol of timeless style and unbridled power – a driving experience that transcends the ordinary and captivates the soul."
+        },
+        {
+            "carId": "6",
+            "name": "Red Ferrari",
+            "price": "$155,000",
+            "img": "red_ferrari.jpg",
+            "description": "Introducing the epitome of automotive passion – the Red Ferrari. Immerse yourself in the sheer thrill of driving as you command the road in this iconic masterpiece. Precision-engineered for exhilarating performance, the Red Ferrari marries stunning design with breathtaking speed. With its powerful engine growling beneath the hood, this crimson beauty is a symphony of power, elegance, and pure driving ecstasy. Unleash the spirit of the prancing horse and experience the undeniable allure of the Red Ferrari – where every journey becomes a celebration of speed and style."
+        }
+    ]
+}
